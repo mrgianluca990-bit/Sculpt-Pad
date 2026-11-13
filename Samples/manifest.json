@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "sampleRate": 44100,
+  "recordedTakesPerRoot": 1,
+  "modelledRoundRobinCount": 4,
+  "sampleFiles": [
+    {
+      "file": "pad_strings_036_rr0.wav",
+      "rootNote": 36,
+      "roundRobin": 0,
+      "loopStart": 116865,
+      "loopEnd": 249165,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_040_rr0.wav",
+      "rootNote": 40,
+      "roundRobin": 0,
+      "loopStart": 94815,
+      "loopEnd": 253575,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_043_rr0.wav",
+      "rootNote": 43,
+      "roundRobin": 0,
+      "loopStart": 81585,
+      "loopEnd": 240345,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_047_rr0.wav",
+      "rootNote": 47,
+      "roundRobin": 0,
+      "loopStart": 114660,
+      "loopEnd": 249165,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_050_rr0.wav",
+      "rootNote": 50,
+      "roundRobin": 0,
+      "loopStart": 99225,
+      "loopEnd": 269010,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_053_rr0.wav",
+      "rootNote": 53,
+      "roundRobin": 0,
+      "loopStart": 112455,
+      "loopEnd": 269010,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_057_rr0.wav",
+      "rootNote": 57,
+      "roundRobin": 0,
+      "loopStart": 79380,
+      "loopEnd": 253575,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_060_rr0.wav",
+      "rootNote": 60,
+      "roundRobin": 0,
+      "loopStart": 116865,
+      "loopEnd": 269010,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_062_rr0.wav",
+      "rootNote": 62,
+      "roundRobin": 0,
+      "loopStart": 88200,
+      "loopEnd": 224910,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_066_rr0.wav",
+      "rootNote": 66,
+      "roundRobin": 0,
+      "loopStart": 79380,
+      "loopEnd": 246960,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_069_rr0.wav",
+      "rootNote": 69,
+      "roundRobin": 0,
+      "loopStart": 92610,
+      "loopEnd": 231525,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_072_rr0.wav",
+      "rootNote": 72,
+      "roundRobin": 0,
+      "loopStart": 116865,
+      "loopEnd": 269010,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_076_rr0.wav",
+      "rootNote": 76,
+      "roundRobin": 0,
+      "loopStart": 99225,
+      "loopEnd": 235935,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_079_rr0.wav",
+      "rootNote": 79,
+      "roundRobin": 0,
+      "loopStart": 119070,
+      "loopEnd": 251370,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_083_rr0.wav",
+      "rootNote": 83,
+      "roundRobin": 0,
+      "loopStart": 99225,
+      "loopEnd": 257985,
+      "loopCrossfade": 19845
+    },
+    {
+      "file": "pad_strings_086_rr0.wav",
+      "rootNote": 86,
+      "roundRobin": 0,
+      "loopStart": 81585,
+      "loopEnd": 222705,
+      "loopCrossfade": 19845
+    }
+  ]
+}
