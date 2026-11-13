@@ -1,0 +1,25 @@
+{
+  "syntax_check": {
+    "command": "c++ -std=c++17 -fsyntax-only -Wall -Wextra -Wpedantic -Werror -DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1 -DJUCE_WEB_BROWSER=0 -DJUCE_USE_CURL=0 -Ijuce-key-check/modules -Iscratch/pad-juce-validation SculptPad/Source/PluginProcessor.cpp SculptPad/Source/PluginEditor.cpp",
+    "exit_code": 0,
+    "stderr": "",
+    "scope": "Actual JUCE 8.0.4 public headers and actual PadEngine.h; declaration-only surrogate for generated BinaryData. No link or macOS VST3 build."
+  },
+  "bash_syntax": "PASS",
+  "workflow_yaml": "PASS",
+  "manifest_entries_checked": 16,
+  "ui_geometry": "Identical to SculptKey after expected class names/title/labels only",
+  "files": {
+    "SculptPad/CMakeLists.txt": "9d2acd03709409f13c846a744be5c9820cc8adf322539f6a8b7add023d925066",
+    "SculptPad/Source/PluginProcessor.h": "9a132fff86d0e7612d6565039978266c68b9d5bece2236b97ca4f27fdf8bf253",
+    "SculptPad/Source/PluginProcessor.cpp": "e974544042593f91be178585632e578460f642d076ab49e9783ae686ca337dcc",
+    "SculptPad/Source/PluginEditor.h": "0d1da9a3038d82760f5c50be64b8105197c8b4dc1c244225a824f330d4278025",
+    "SculptPad/Source/PluginEditor.cpp": "353e3c075c3995caaf96f8cb5cd755e6901d5bed94084a9e9bfb74e8a02e3782",
+    "SculptPad/.github/workflows/build-macos-vst3.yml": "ed52ba79e60ba007174eb9079c2787ad901e8d6ee1d382aca3c524557df6fa23",
+    "SculptPad/.gitignore": "5ee8a43db5f7127e34cf1bf4550c7809595fae262789b874e841be8ef883c5c7",
+    "SculptPad/tools/build-macos.sh": "3a02ee31042c477927ac98c74b3c759851614150e62ba8fc17a44f10e856528e",
+    "SculptPad/tools/test-core.sh": "45b827480b880b0d6ad1b748eb4e50edbaf823c321434d749d7aaca383e9597e",
+    "SculptPad/ThirdParty/JUCE-8.0.4-LICENSE.md": "8c596884d914de7ae9fc33b407e22752ded6dd65df3e323c568479d38e138a46",
+    "SculptPad/Source/PadEngine.h": "a42da7d31b2f36bceefcb20b14a5f85b253d2456dae22c7903c217ec08c44a84"
+  }
+}

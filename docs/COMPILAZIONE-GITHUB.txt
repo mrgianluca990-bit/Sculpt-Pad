@@ -1,0 +1,36 @@
+SCULPT PAD — AVVIO COMPILAZIONE MACOS VST3
+
+1. Estrai SculptPad-0.1.0-sorgenti.zip.
+2. Carica il CONTENUTO della cartella SculptPad nella radice del repository.
+   CMakeLists.txt, Source, Samples, tools e .github devono essere allo stesso
+   livello. Non caricare soltanto lo ZIP e non aggiungere un livello SculptPad
+   tra la radice del repository e questi file.
+3. Verifica la presenza di questo percorso esatto:
+
+   .github/workflows/build-macos-vst3.yml
+
+   Il punto prima di github è necessario. Nel pacchetto la cartella è già
+   presente, ma alcuni metodi di caricamento non includono le cartelle nascoste.
+   Il workflow viene fornito anche come file singolo.
+4. Se manca, sul repository usa Add file > Create new file e inserisci come
+   nome .github/workflows/build-macos-vst3.yml. Incolla il contenuto del file
+   fornito e salva un commit sul branch predefinito.
+5. Apri Actions > Build macOS VST3. Il workflow è configurato per ogni push.
+   Per l'avvio manuale: Run workflow > seleziona branch > Run workflow.
+6. Attendi l'esito. Se è riuscito, apri quella esecuzione e scarica l'artefatto
+   Sculpt-Pad-macOS-VST3. Estrai gli ZIP fino a ottenere Sculpt Pad.vst3.
+
+Il workflow esegue prima i test del motore, poi compila il VST3 universale
+Apple Silicon e Intel, controlla le architetture e applica una firma locale.
+
+Il file YAML usa tools/test-core.sh e tools/build-macos.sh e tutti i sorgenti
+del progetto. Caricare solo il workflow non sostituisce il progetto completo.
+
+Il pulsante Run workflow richiede che il workflow esista nel branch
+predefinito del repository e contenga workflow_dispatch (già incluso).
+Riferimento ufficiale:
+https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow
+
+Questa consegna comprende SORGENTI e configurazione. Non è già stato prodotto
+un binario macOS in questo ambiente Linux. Il risultato nativo verrà verificato
+dall'esecuzione GitHub Actions sul tuo repository.

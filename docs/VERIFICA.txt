@@ -1,0 +1,59 @@
+SCULPT PAD 0.1.0 — VERIFICA DELLA CONSEGNA
+
+Data: 13 novembre 2026.
+Motore: Source/PadEngine.h
+SHA256: a42da7d31b2f36bceefcb20b14a5f85b253d2456dae22c7903c217ec08c44a84
+
+VERIFICHE ESEGUITE
+- 12 controlli del core C++17: PASS. Compilazione con -O2 -Wall -Wextra
+  -Wpedantic -Werror. Log completo in core-tests.txt.
+- Verificati silenzio e input non validi, metadati di campioni/loop,
+  accordi sostenuti e morph continuo, velocity/stereo, ciclo RR4 e reset,
+  sustain e panic per canale, FIFO delle note ripetute anche con voci rubate,
+  isolamento pitch bend, mute, indipendenza dalla dimensione del blocco,
+  frequenze 8/44,1/96/192 kHz e valori MIDI estremi.
+- Nessuna allocazione C++ osservata nel test strumentato MIDI/render.
+- 32 voci principali e 8 code brevi con memoria prefissata.
+- Wrapper ed editor: sintassi verificata con veri header JUCE 8.0.4 e
+  questo esatto motore; warning trattati come errori. Per il file generato
+  BinaryData è stato usato soltanto un sostituto dichiarativo esterno al
+  progetto. Dettaglio/comando in wrapper-verification.json.
+- Sintassi degli script Bash e struttura YAML del workflow: PASS.
+- Mapping dei 16 campioni, formato WAV, loop, nomi risorsa e integrità
+  SHA256 verificati. Provenienza e misure in Samples/source-info.json.
+- Layout dell'interfaccia confrontato con il progetto Sculpt Key:
+  geometria/controlli invariati, nome ed etichette adattati a Pad.
+
+ANTEPRIMA REALE DEL MOTORE
+- 68 secondi, stereo, 44,1 kHz, PCM16.
+- Stessa banca e stesso codice DSP del plug-in, nessun effetto esterno
+  e nessuna normalizzazione indipendente dei singoli timbri.
+- Picco campionato: -6.272 dBFS.
+- True peak stimato con oversampling 4x: -6.266 dBFS.
+- Campioni a fondo scala: 0; valori non finiti:
+  nessuno nel render prima della conversione PCM.
+- RMS stereo nella finestra attiva 1–7 secondi di ogni sezione:
+  Archi: -21.318 dBFS.
+  Ensemble: -21.435 dBFS.
+  Analog: -21.631 dBFS.
+  Digital: -21.192 dBFS.
+- Escursione RMS tra i quattro riferimenti: 0.439 dB.
+  È una misura su questa frase e velocity, non una garanzia di loudness
+  percettiva identica per qualsiasi nota o accordo.
+- Accordo sostenuto durante il morph: nessun intervallo di silenzio.
+  Finestra RMS di 0,5 secondi: -23.632
+  / -19.642 dBFS (min/max).
+- Ultimi 200 ms di ciascuna sezione e della coda finale: silenzio PCM.
+- Risultati completi in preview-metrics.json.
+
+LIMITI DELLA VERIFICA
+Non è stata eseguita una compilazione/link nativa macOS o una prova in DAW
+in questo ambiente Linux. Il workflow incluso compila su macos-15 per
+arm64 e x86_64 e pubblica il VST3 dopo controlli e firma ad hoc.
+L'anteprima verifica il nucleo sonoro, non il comportamento di una DAW.
+La scelta musicale finale dei timbri resta da valutare all'ascolto.
+
+CAMPIONI E ROUND ROBIN
+16 registrazioni stereo VSCO 2 CE CC0, una ripresa morbida per fondamentale.
+Quattro variazioni modellate automatiche; non quattro take acustici.
+Crediti e licenze completi sono inclusi in ThirdParty/.

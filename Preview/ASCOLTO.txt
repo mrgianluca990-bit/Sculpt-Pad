@@ -1,0 +1,21 @@
+SCULPT PAD 0.1.0 — ANTEPRIMA
+
+Durata: 1 minuto e 8 secondi. WAV stereo, 44,1 kHz, PCM16.
+Render diretto dello stesso motore e degli stessi campioni del plug-in.
+Nessun riverbero esterno, nessun effetto aggiunto e nessuna normalizzazione
+separata dei quattro timbri.
+
+0:00–0:12  ARCHI      Morph 0%
+0:12–0:24  ENSEMBLE   Morph 33,3%
+0:24–0:36  ANALOG     Morph 66,7%
+0:36–0:48  DIGITAL    Morph 100%
+0:48–1:08  Un accordo sostenuto attraversa tutta la manopola.
+
+Primi quattro esempi: stessi due accordi Cmaj9 e Am9, stessa velocity 0,72.
+Nell'ultimo esempio: accordo Cm9, pedale premuto; le note vengono rilasciate
+a 0:49, il morph sale da 0:50 a 1:01 e il pedale viene rilasciato a 1:03.
+Segue la coda naturale del motore fino al silenzio.
+
+Il primo timbro deriva da registrazioni reali di archi VSCO 2 CE.
+I quattro round robin sono variazioni modellate: la banca contiene una
+ripresa acustica per nota fondamentale, non quattro riprese diverse.

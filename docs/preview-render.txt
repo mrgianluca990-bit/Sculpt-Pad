@@ -1,0 +1,8 @@
+Loaded 16 stereo samples
+Rendered anchor 0
+Rendered anchor 1
+Rendered anchor 2
+Rendered anchor 3
+Clipped output samples: 0
+Peak dBFS: -6.2715
+Saved "SculptPad/Preview/SculptPad-demo.wav" (68 seconds, stereo, 44.1 kHz)

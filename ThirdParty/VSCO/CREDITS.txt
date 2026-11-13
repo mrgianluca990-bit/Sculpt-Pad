@@ -1,0 +1,46 @@
+SCULPT PAD — CAMPIONI DI ARCHI
+
+Registrazioni acustiche: VSCO 2 Community Edition, Versilian Studios.
+Registrazioni di Sam Gossner e Simon Dalzell.
+Taglio dei campioni: Elan Hickler / Soundemote.
+
+Sito ufficiale:
+https://versilian-studios.com/vsco-community/
+Repository originale:
+https://github.com/sgossner/VSCO-2-CE
+Revisione della sorgente:
+440300901dfe9275fd84e0b7763af1f8443ae62e
+
+Licenza dei campioni: CC0 1.0 Universal.
+Testo integrale: LICENSE-CC0.txt, copiato dalla sorgente originale.
+Richieste e crediti degli autori: UPSTREAM-Readme.txt, conservato integralmente.
+
+CONTENUTO DI QUESTA SELEZIONE
+16 registrazioni stereo di archi suonati con l'arco: sezione violoncelli e
+sezione violini, articolazione sustain con vibrato, dinamica morbida.
+Note fondamentali MIDI:
+violoncelli 36, 40, 43, 47, 50, 53, 57, 60;
+violini 62, 66, 69, 72, 76, 79, 83, 86.
+
+Le ottave riportate nei nomi originali sono un'ottava sotto la notazione
+MIDI utilizzata dal progetto: per esempio susvib_C3 indica il Do a circa
+261,6 Hz, MIDI 60. La mappatura è stata controllata sul contenuto audio.
+
+MODIFICHE APPORTATE PER SCULPT PAD
+Selezione delle registrazioni morbide, filtro passa-alto a 20 Hz e passa-basso
+a 9,5 kHz, bilanciamento RMS del sustain con limite conservativo al picco,
+selezione di regioni di loop e taglio dopo il relativo punto finale.
+L'attacco originale viene mantenuto. I file distribuiti sono WAV stereo
+44,1 kHz PCM16 con dithering TPDF deterministico. Nessuna correzione automatica
+dell'intonazione. Il motore esegue una sovrapposizione di 450 ms durante il
+loop: la sovrapposizione non è già applicata nei file WAV.
+
+È presente UNA registrazione per nota fondamentale, non quattro riprese.
+Le quattro varianti round robin di Sculpt Pad sono variazioni modellate dal
+motore intorno a queste registrazioni e alle componenti sintetiche.
+
+Samples/source-info.json conserva percorsi, URL, impronte SHA-256 e misure
+dei singoli file. tools/factory_sample_sources.json fissa le sorgenti;
+tools/import_factory_samples.py permette di rigenerare la selezione.
+
+I marchi e i nomi citati identificano la provenienza delle registrazioni.

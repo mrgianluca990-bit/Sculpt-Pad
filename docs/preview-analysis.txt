@@ -1,0 +1,91 @@
+{
+  "audio": "SculptPad-demo.wav",
+  "seconds": 68.0,
+  "sampleRate": 44100,
+  "channels": 2,
+  "peakDbFS": -6.271774373649109,
+  "truePeak4xDbFS": -6.266246998618037,
+  "fullScaleSamples": 0,
+  "nonfiniteSamples": 0,
+  "anchors": [
+    {
+      "name": "Archi",
+      "morph": 0.0,
+      "startSeconds": 0,
+      "activeRmsDbFS": -21.31803652195795,
+      "peakDbFS": -6.271774373649109,
+      "monoLossDb": -1.2932537924511394,
+      "stereoCorrelation": 0.5032838201739446,
+      "spectralCentroidHz": 493.9680348406212,
+      "energyAbove2kHzPercent": 2.0590597027624393,
+      "dc": [
+        2.80205805195342e-06,
+        1.4887411127645502e-06
+      ],
+      "last200msPeakDbFS": -240.0,
+      "maximumAdjacentStep": 0.048675537109375
+    },
+    {
+      "name": "Ensemble",
+      "morph": 0.3333333333333333,
+      "startSeconds": 12,
+      "activeRmsDbFS": -21.43507825833565,
+      "peakDbFS": -8.612470365245692,
+      "monoLossDb": -0.7390813631926925,
+      "stereoCorrelation": 0.6943850712568499,
+      "spectralCentroidHz": 396.1844608804579,
+      "energyAbove2kHzPercent": 1.30790713072863,
+      "dc": [
+        2.243030458711262e-06,
+        -2.9472645177862813e-06
+      ],
+      "last200msPeakDbFS": -240.0,
+      "maximumAdjacentStep": 0.0362548828125
+    },
+    {
+      "name": "Analog",
+      "morph": 0.6666666666666666,
+      "startSeconds": 24,
+      "activeRmsDbFS": -21.631201986915972,
+      "peakDbFS": -9.08221136245301,
+      "monoLossDb": -0.39334771172331173,
+      "stereoCorrelation": 0.826862696491081,
+      "spectralCentroidHz": 371.73074045050197,
+      "energyAbove2kHzPercent": 0.8071865260323007,
+      "dc": [
+        -1.6173393728150982e-06,
+        -1.530561497602513e-05
+      ],
+      "last200msPeakDbFS": -240.0,
+      "maximumAdjacentStep": 0.043914794921875
+    },
+    {
+      "name": "Digital",
+      "morph": 1.0,
+      "startSeconds": 36,
+      "activeRmsDbFS": -21.19177403386608,
+      "peakDbFS": -8.61604348209976,
+      "monoLossDb": -1.7184891605910657,
+      "stereoCorrelation": 0.3464628711041865,
+      "spectralCentroidHz": 552.9538745967249,
+      "energyAbove2kHzPercent": 3.155184373932765,
+      "dc": [
+        3.5771076551280235e-06,
+        1.0167681981646826e-05
+      ],
+      "last200msPeakDbFS": -240.0,
+      "maximumAdjacentStep": 0.08935546875
+    }
+  ],
+  "anchorRmsSpreadDb": 0.43942795304989346,
+  "heldMorph": {
+    "startSeconds": 48,
+    "morphStartSeconds": 50,
+    "morphEndSeconds": 61,
+    "pedalReleaseSeconds": 63,
+    "minHalfSecondRmsDbFS": -23.632488063919624,
+    "maxHalfSecondRmsDbFS": -19.64152387944165,
+    "last200msPeakDbFS": -240.0,
+    "maximumAdjacentStep": 0.075042724609375
+  }
+}

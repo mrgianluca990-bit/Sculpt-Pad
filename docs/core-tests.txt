@@ -1,0 +1,14 @@
+PASS: silence and invalid inputs
+PASS: invalid sample and loop metadata
+PASS: long held loops and continuous morph
+PASS: velocity and stereo
+PASS: four RR variations and deterministic reset
+PASS: sustain, channels and panic
+PASS: repeated notes and stolen-note FIFO
+PASS: pitch bend isolation and output mute
+PASS: host block independence
+PASS: sample rates and extreme MIDI
+PASS: no audio-thread C++ allocations
+32-voice CPU observation: 51.48% of audio duration (this host only)
+PASS: 32-voice timing observation
+All 12 Sculpt Pad core checks passed.
