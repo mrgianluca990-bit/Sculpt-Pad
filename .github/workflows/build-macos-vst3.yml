@@ -1,0 +1,36 @@
+name: Build macOS VST3
+
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sculpt-pad-macos-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Universal macOS VST3
+    runs-on: macos-15
+    timeout-minutes: 40
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify pad engine
+        run: bash tools/test-core.sh
+
+      - name: Build, verify architecture and sign ad-hoc
+        run: bash tools/build-macos.sh
+
+      - name: Upload VST3 archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: Sculpt-Pad-macOS-VST3
+          path: dist/Sculpt-Pad-macOS-VST3.zip
+          if-no-files-found: error
+          retention-days: 14
